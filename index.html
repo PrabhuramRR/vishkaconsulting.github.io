@@ -1,12 +1,26 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Vishka Consulting</title>
-  <!-- Link to external CSS file -->
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <h1>Welcome to Vishka Consulting</h1>
-  <p>Site under construction.</p>
-</body>
-</html>
+---
+layout: default
+title: Home
+---
+
+<section class="hero">
+  <img src="{{ site.baseurl }}/assets/images/hero.jpg" alt="IT Consulting">
+</section>
+
+<section>
+  <h2>Transforming IT for Your Success</h2>
+  <p>
+    Vishka Consulting helps organisations modernise data platforms,
+    streamline analytics, and deliver scalable cloud solutions.
+  </p>
+</section>
+
+<section class="contact">
+  <h2>Contact Us</h2>
+  <form action="https://formspree.io/f/xbjnzqjp" method="POST">
+    <input type="text" name="name" placeholder="Your name" required>
+    <input type="email" name="email" placeholder="Your email" required>
+    <textarea name="message" placeholder="Your message" rows="4"></textarea>
+    <button type="submit">Send</button>
+  </form>
+</section>
