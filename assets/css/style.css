@@ -1,58 +1,47 @@
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background: #f6f7f9;
-  color: #333;
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+  background: #fff;
+  border-bottom: 1px solid #eee;
 }
 
-.site-header {
-  background: #002b5c;
-  color: #fff;
-  padding: 40px 20px;
+.nav a {
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+}
+
+.nav a.active {
+  color: #2563eb;
+}
+
+.hero, .page-hero {
   text-align: center;
+  padding: 100px 20px;
+  background: #f3f6fb;
 }
 
-.content {
-  max-width: 900px;
-  margin: auto;
-  padding: 30px 20px;
+.btn {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 15px 40px;
+  background: #e0b73f;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
 }
 
-.hero img {
-  width: 100%;
+.cards {
+  list-style: none;
+  padding: 0;
+}
+
+.cards li {
+  background: #fff;
+  padding: 20px;
+  margin: 10px 0;
   border-radius: 6px;
-}
-
-h2 {
-  color: #002b5c;
-}
-
-.contact form {
-  display: grid;
-  gap: 12px;
-  max-width: 500px;
-}
-
-input, textarea, button {
-  padding: 10px;
-  font-size: 1rem;
-}
-
-button {
-  background: #002b5c;
-  color: white;
-  border: none;
-  cursor: pointer;
-}
-
-button:hover {
-  background: #00408a;
-}
-
-.site-footer {
-  background: #222;
-  color: #fff;
-  text-align: center;
-  padding: 15px;
-  margin-top: 40px;
 }
