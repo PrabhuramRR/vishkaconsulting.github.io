@@ -4,9 +4,18 @@
   position: sticky;
   top: 0;
   z-index: 100;
-  justify-content: flex-end; /* moves links to the right */
+  align-items: centre;
   padding: 6px 24px;
   padding: 6px 0;
+  font-weight: bold;
+}
+
+.nav-container {
+  display: flex;
+  align-items: centre;
+  justify-content: space-between; /* logo left, links centered */
+  padding: 1rem 2rem;
+  background-color: #f8f8f8; /* optional */
 }
 
 .nav a {
