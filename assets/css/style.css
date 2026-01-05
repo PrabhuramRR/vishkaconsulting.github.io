@@ -4,12 +4,17 @@
   position: sticky;
   top: 0;
   z-index: 100;
+  justify-content: flex-end; /* moves links to the right */
+  padding: 6px 24px;
+  padding: 6px 0;
 }
 
 .nav a {
   text-decoration: none;
   color: #555;
   font-weight: 500;
+  font-size: 1.05rem; /* slightly bigger */
+  padding: 14px 18px; /* gives them more presence */
 }
 
 .nav a.active {
@@ -43,7 +48,7 @@
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.btn:hover {
+.btn: hover {
   transform: translateY(-2px);
   box-shadow: 0 14px 40px rgba(234,179,8,0.45);
 }
