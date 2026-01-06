@@ -18,6 +18,11 @@
   background-color: #f8f8f8; /* optional */
 }
 
+.logo img {
+  display: block;
+  max-height: 50px; /* adjust as needed */
+}
+
 .nav a {
   text-decoration: none;
   color: #555;
