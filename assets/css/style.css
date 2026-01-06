@@ -14,8 +14,8 @@
 
 .logo img {
   display: block;
-  height: 100px; /* Adjust as needed */
-  width: auto;
+  height: 150px; /* Adjust as needed */
+  width: 60px;
 }
 
 .nav-wrapper {
