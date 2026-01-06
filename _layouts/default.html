@@ -7,28 +7,33 @@
   <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
 </head>
 <body>
+  <!-- Fixed Navigation Bar -->
+  <header class="nav-container">
+    <!-- Logo on the left -->
+    <a href="{{ site.baseurl }}/" class="logo">
+      <img src="{{ site.baseurl }}/assets/images/VishkaConsulting.png" alt="{{ site.title }}">
+    </a>
 
-  <nav class="nav-container">
-  <!-- Logo image -->
-  <a href="{{ site.baseurl }}/" class="logo">
-    <img src="{{ site.baseurl }}/assets/images/VishkaConsulting.png" alt="{{ site.title }}" height="100">
-  </a>
+    <!-- Centered navigation links -->
+    <div class="nav-wrapper">
+      <nav class="nav">
+        <a href="{{ site.baseurl }}/" class="{% if page.url == '/' %}active{% endif %}">Home</a>
+        <a href="{{ site.baseurl }}/services" class="{% if page.url contains 'services' %}active{% endif %}">Services</a>
+        <a href="{{ site.baseurl }}/solutions" class="{% if page.url contains 'solutions' %}active{% endif %}">Solutions</a>
+        <a href="{{ site.baseurl }}/about" class="{% if page.url contains 'about' %}active{% endif %}">About</a>
+        <a href="{{ site.baseurl }}/contact" class="{% if page.url contains 'contact' %}active{% endif %}">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-  <nav class="nav">
-    <a href="{{ site.baseurl }}/" class="{% if page.url == '/' %}active{% endif %}">Home</a>
-    <a href="{{ site.baseurl }}/services" class="{% if page.url contains 'services' %}active{% endif %}">Services</a>
-    <a href="{{ site.baseurl }}/solutions" class="{% if page.url contains 'solutions' %}active{% endif %}">Solutions</a>
-    <a href="{{ site.baseurl }}/about" class="{% if page.url contains 'about' %}active{% endif %}">About</a>
-    <a href="{{ site.baseurl }}/contact" class="{% if page.url contains 'contact' %}active{% endif %}">Contact</a>
-  </nav>
-
+  <!-- Main page content -->
   <main class="content">
     {{ content }}
   </main>
 
+  <!-- Footer -->
   <footer class="site-footer">
     © 2025 Vishka Consulting Limited — All Rights Reserved.
   </footer>
-
 </body>
 </html>
