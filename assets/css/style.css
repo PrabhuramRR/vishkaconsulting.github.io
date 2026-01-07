@@ -51,6 +51,23 @@
   background: rgba(37, 99, 235, 0.15);
 }
 
+.contact-form input,
+.contact-form textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px; /* spacing between fields */
+  padding: 10px;
+  font-size: 14px;
+}
+
+.contact-form textarea {
+  min-height: 120px;
+}
+
+.contact-form button {
+  margin-top: 10px;
+}
+
 /* Body and Layout */
 body {
   margin: 0;
