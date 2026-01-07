@@ -3,17 +3,36 @@ layout: default
 title: Contact
 ---
 
-<h1>Contact Us</h1>
+<div class="contact-container">
 
-<form action="https://formspree.io/f/xbjnzqjp" method="POST" class="contact-form">
-  <input type="text" name="name" placeholder="Your name" required>
+  <!-- LEFT: Company Details -->
+  <div class="contact-details">
+    <h1>Contact Us</h1>
 
-  <input type="email" name="email" placeholder="Your email" required>
+    <p><strong>Address:</strong><br>
+      14, Rushmead Close,<br>
+      Croydon, CR0 5JG, <br>
+      London, UK
+    </p>
 
-  <input type="text" name="phone" placeholder="Mobile number">
+    <p><strong>Phone:</strong><br>
+      +44 7405231024
+    </p>
 
-  <textarea name="message" placeholder="Your message"></textarea>
+    <p><strong>Email:</strong><br>
+      contact@vishkaconsulting.co.uk
+  </p>
+  </div>
 
-  <button type="submit">Send</button>
+  <!-- RIGHT: Contact Form -->
+  <div class="contact-form-wrapper">
+    <form action="https://formspree.io/f/xbjnzqjp" method="POST" class="contact-form">
+      <input type="text" name="name" placeholder="Your name" required>
+      <input type="email" name="email" placeholder="Your email" required>
+      <input type="text" name="phone" placeholder="Mobile number">
+      <textarea name="message" placeholder="Your message"></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </div>
 
-</form>
+</div>
