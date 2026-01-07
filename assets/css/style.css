@@ -168,6 +168,18 @@ body {
   box-shadow: 0 4px 15px rgba(0,0,0,0.05);
 }
 
+.cards li a {
+  text-decoration: none;
+  color: #1f2937;
+  font-weight: 600;
+  display: block;
+}
+
+.cards li: hover {
+  transform: translateY(-4px);
+  transition: transform 0.2s ease;
+}
+
 /* Hero Glow Effects */
 .hero,
 .page-hero {
