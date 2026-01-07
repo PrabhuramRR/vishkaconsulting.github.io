@@ -59,7 +59,7 @@
 .contact-form input,
 .contact-form textarea {
   display: block;
-  width: 100%;
+  width: 50%;
   margin-bottom: 10px; /* spacing between fields */
   padding: 10px;
   font-size: 14px;
