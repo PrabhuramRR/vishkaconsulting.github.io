@@ -51,6 +51,11 @@
   background: rgba(37, 99, 235, 0.15);
 }
 
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
 .contact-form input,
 .contact-form textarea {
   display: block;
